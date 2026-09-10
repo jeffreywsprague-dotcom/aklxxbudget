@@ -1,0 +1,536 @@
+{"owners": ["Marc", "Matt", "Tony", "Adam", "Jeff", "Randy", "Ryan", "Ken", "Dan", "Leeman", "Brad", "CMAC"], "rosters": {"Marc": [{"name": "James Cook", "cost": 54}, {"name": "Amon-Ra St. Brown", "cost": 30}, {"name": "D'Andre Swift", "cost": 30}, {"name": "George Pickens", "cost": 22}, {"name": "Rhamondre Stevenson", "cost": 19}, {"name": "Kyle Pitts", "cost": 10}, {"name": "Hurts", "cost": 8}, {"name": "Michael Wilson", "cost": 7}, {"name": "Malik Davis", "cost": 6}, {"name": "Dallas Goerdert", "cost": 3}, {"name": "Will Reichard", "cost": 1}, {"name": "LAC DEF", "cost": 2}, {"name": "Woody Marks", "cost": 2}, {"name": "Bo Nix", "cost": 2}, {"name": "Jayden Reed", "cost": 2}, {"name": "Kimani Vidal", "cost": 1}, {"name": "Keenan Allen", "cost": 1}], "Matt": [{"name": "Bijan Robinson (Atl - RB)", "cost": 84}, {"name": "Garrett Wilson (NYJ - WR)", "cost": 29}, {"name": "Chris Olave (NO - WR)", "cost": 11}, {"name": "De'Von Achane (Mia - RB)", "cost": 9}, {"name": "Chris Rodriguez Jr. (Jax - RB)", "cost": 9}, {"name": "Kenny Gainwell (TB - RB)", "cost": 8}, {"name": "Jayden Daniels (Was - QB)", "cost": 7}, {"name": "George Kittle (SF - TE)", "cost": 7}, {"name": "Brian Thomas Jr. (Jax - WR)", "cost": 7}, {"name": "Terry McLaurin (Was - WR)", "cost": 5}, {"name": "Denzel Boston (Cle - WR)", "cost": 5}, {"name": "Rachaad White (Was - RB)", "cost": 4}, {"name": "Tyler Allgeier (Ari - RB)", "cost": 4}, {"name": "Cam Little (Jax - K)", "cost": 2}, {"name": "Ja'Kobi Lane", "cost": 3}, {"name": "Steelers (Pit - DEF)", "cost": 1}, {"name": "Malik Willis", "cost": 1}], "Tony": [{"name": "CeeDee Lamb (Dal - WR)", "cost": 62}, {"name": "Omarion Hampton (LAC - RB)", "cost": 42}, {"name": "Josh Jacobs (GB - RB)", "cost": 30}, {"name": "Josh Allen (Buf - QB)", "cost": 21}, {"name": "Rico Dowdle (Pit - RB)", "cost": 7}, {"name": "Aaron Jones Sr. (Min - RB)", "cost": 6}, {"name": "Romeo Doubs (NE - WR)", "cost": 6}, {"name": "Alec Pierce (Ind - WR)", "cost": 5}, {"name": "Jordyn Tyson (NO - WR)", "cost": 5}, {"name": "Travis Kelce (KC - TE)", "cost": 4}, {"name": "Michael Pittman Jr. (Pit - WR)", "cost": 4}, {"name": "Keaton Mitchell (LAC - RB)", "cost": 3}, {"name": "Brandon Aubrey (Dal - K)", "cost": 1}, {"name": "Ravens (Bal - DEF)", "cost": 1}, {"name": "Hunter Henry (NE - TE)", "cost": 1}, {"name": "Deebo Samuel Sr. (SF - WR)", "cost": 1}, {"name": "T.J. Hockenson (Min - TE)", "cost": 1}], "Adam": [{"name": "Zay Flowers (Bal - WR)", "cost": 48}, {"name": "Javonte Williams (Dal - RB)", "cost": 48}, {"name": "Carnell Tate (Ten - WR)", "cost": 18}, {"name": "Chase Brown (Cin - RB)", "cost": 16}, {"name": "Jordan Mason (Min - RB)", "cost": 14}, {"name": "Travis Etienne Jr. (NO - RB)", "cost": 11}, {"name": "Sam LaPorta (Det - TE)", "cost": 10}, {"name": "Nico Collins (Hou - WR)", "cost": 9}, {"name": "Dak Prescott (Dal - QB)", "cost": 9}, {"name": "KC Concepcion (Cle - WR)", "cost": 8}, {"name": "Tucker Kraft (GB - TE)", "cost": 6}, {"name": "Rams (LAR - DEF)", "cost": 2}, {"name": "Evan McPherson (Cin - K)", "cost": 1}], "Jeff": [{"name": "Malik Nabers (NYG - WR)", "cost": 51}, {"name": "Trey McBride (Ari - TE)", "cost": 36}, {"name": "Jonathan Taylor", "cost": 48}, {"name": "Tre Tucker", "cost": 2}, {"name": "Quinshon Judkins (Cle - RB)", "cost": 11}, {"name": "Kaleb Johnson", "cost": 3}, {"name": "Marvin Harrison Jr. (Ari - WR)", "cost": 10}, {"name": "Makai Lemon (Phi - WR)", "cost": 8}, {"name": "Jared Goff (Det - QB)", "cost": 6}, {"name": "Luther Burden III (Chi - WR)", "cost": 4}, {"name": "Kyle Monangai (Chi - RB)", "cost": 4}, {"name": "Jonah Coleman (Den - RB)", "cost": 4}, {"name": "Emmett Johnson (KC - RB)", "cost": 3}, {"name": "Chris Bell", "cost": 1}, {"name": "Spencer Shrader", "cost": 1}, {"name": "Braelon Allen (NYJ - RB)", "cost": 2}, {"name": "Roschon Johnson", "cost": 3}], "Randy": [{"name": "Jeremiyah Love (Ari - RB)", "cost": 50}, {"name": "Ja'Marr Chase (Cin - WR)", "cost": 30}, {"name": "Kenneth Walker III (KC - RB)", "cost": 27}, {"name": "Davante Adams (LAR - WR)", "cost": 23}, {"name": "DJ Moore (Buf - WR)", "cost": 17}, {"name": "De'Zhaun Stribling (SF - WR)", "cost": 13}, {"name": "Mike Washington Jr. (LV - RB)", "cost": 12}, {"name": "Harold Fannin Jr. (Cle - TE)", "cost": 7}, {"name": "Courtland Sutton (Den - WR)", "cost": 7}, {"name": "Caleb Williams (Chi - QB)", "cost": 3}, {"name": "Texans (Hou - DEF)", "cost": 3}, {"name": "Patrick Mahomes (KC - QB)", "cost": 2}, {"name": "Cameron Dicker (LAC - K)", "cost": 2}, {"name": "Kaelon Black", "cost": 2}, {"name": "Kenyon Sadiq (NYJ - TE)", "cost": 1}, {"name": "Kyle Williams (NE - WR)", "cost": 1}], "Ryan": [{"name": "Jahmyr Gibbs (Det - RB)", "cost": 41}, {"name": "Bhayshul Tuten (Jax - RB)", "cost": 23}, {"name": "Jonathon Brooks (Car - RB)", "cost": 22}, {"name": "Emeka Egbuka (TB - WR)", "cost": 21}, {"name": "Parker Washington (Jax - WR)", "cost": 21}, {"name": "Brock Bowers (LV - TE)", "cost": 15}, {"name": "Jaylen Warren (Pit - RB)", "cost": 12}, {"name": "Matthew Golden (GB - WR)", "cost": 6}, {"name": "Trevor Lawrence (Jax - QB)", "cost": 5}, {"name": "Justin Herbert (LAC - QB)", "cost": 5}, {"name": "Stefon Diggs (Was - WR)", "cost": 5}, {"name": "Josh Downs (Ind - WR)", "cost": 5}, {"name": "Michael Mayer", "cost": 3}, {"name": "Wan'Dale Robinson (Ten - WR)", "cost": 4}, {"name": "Dylan Sampson (Cle - RB)", "cost": 3}, {"name": "Patriots (NE - DEF)", "cost": 1}, {"name": "Jake Bates (Det - K)", "cost": 1}], "Ken": [{"name": "Saquon Barkley (Phi - RB)", "cost": 36}, {"name": "Tee Higgins (Cin - WR)", "cost": 36}, {"name": "Bucky Irving (TB - RB)", "cost": 26}, {"name": "Christian Watson (GB - WR)", "cost": 21}, {"name": "Tyler Warren (Ind - TE)", "cost": 17}, {"name": "Lamar Jackson (Bal - QB)", "cost": 16}, {"name": "Mike Evans (SF - WR)", "cost": 12}, {"name": "MarShawn Lloyd (GB - RB)", "cost": 10}, {"name": "Rome Odunze (Chi - WR)", "cost": 6}, {"name": "Jacory Croskey-Merritt (Was - RB)", "cost": 5}, {"name": "Jalen Coker (Car - WR)", "cost": 4}, {"name": "Jordan Addison (Min - WR)", "cost": 2}, {"name": "Mark Andrews (Bal - TE)", "cost": 2}, {"name": "Jaguars (Jax - DEF)", "cost": 1}, {"name": "Tyler Loop (Bal - K)", "cost": 1}, {"name": "Tank Bigsby (Phi - RB)", "cost": 1}, {"name": "Kyler Murray", "cost": 3}], "Dan": [{"name": "Christian McCaffrey (SF - RB)", "cost": 79}, {"name": "Jadarian Price (Sea - RB)", "cost": 29}, {"name": "David Montgomery (Hou - RB)", "cost": 28}, {"name": "Ladd McConkey (LAC - WR)", "cost": 19}, {"name": "DeVonta Smith (Phi - WR)", "cost": 17}, {"name": "Drake London (Atl - WR)", "cost": 15}, {"name": "Jake Ferguson", "cost": 2}, {"name": "Zach Charbonnet (Sea - RB)", "cost": 2}, {"name": "Brock Purdy (SF - QB)", "cost": 2}, {"name": "Brian Robinson (Atl - RB)", "cost": 2}, {"name": "Eagles (Phi - DEF)", "cost": 1}, {"name": "Jason Myers (Sea - K)", "cost": 1}, {"name": "Jaxon Dart", "cost": 1}, {"name": "Brenton Strange (Jax - TE)", "cost": 1}], "Leeman": [{"name": "Tetairoa McMillan (Car - WR)", "cost": 49}, {"name": "Breece Hall", "cost": 30}, {"name": "Jaxon Smith-Njigba (Sea - WR)", "cost": 41}, {"name": "Kyren Williams (LAR - RB)", "cost": 26}, {"name": "Tyler Shough", "cost": 1}, {"name": "Chuba Hubbard (Car - RB)", "cost": 6}, {"name": "Jakobi Meyers (Jax - WR)", "cost": 5}, {"name": "Matthew Stafford (LAR - QB)", "cost": 2}, {"name": "Caleb Douglas (Mia - WR)", "cost": 2}, {"name": "Najee Harris (NYG - RB)", "cost": 1}, {"name": "Oronde Gadsden (LAC - TE)", "cost": 1}, {"name": "Nicholas Singleton (Ten - RB)", "cost": 1}, {"name": "Giants (NYG - DEF)", "cost": 1}, {"name": "Chig Okonkwo", "cost": 1}, {"name": "Harrison Mevis", "cost": 3}, {"name": "Jaylen Waddle", "cost": 14}, {"name": "Blake Corum", "cost": 11}], "Brad": [{"name": "Ashton Jeanty (LV - RB)", "cost": 45}, {"name": "Rashee Rice (KC - WR)", "cost": 31}, {"name": "TreVeyon Henderson (NE - RB)", "cost": 26}, {"name": "Drake Maye (NE - QB)", "cost": 16}, {"name": "Justin Jefferson (Min - WR)", "cost": 15}, {"name": "DK Metcalf (Pit - WR)", "cost": 10}, {"name": "Tony Pollard (Ten - RB)", "cost": 9}, {"name": "RJ Harvey (Den - RB)", "cost": 7}, {"name": "Quentin Johnston (LAC - WR)", "cost": 7}, {"name": "Cam Skattebo (NYG - RB)", "cost": 5}, {"name": "Colston Loveland (Chi - TE)", "cost": 5}, {"name": "Malachi Fields (NYG - WR)", "cost": 4}, {"name": "Juwan Johnson (NO - TE)", "cost": 4}, {"name": "Baker Mayfield (TB - QB)", "cost": 3}, {"name": "Tyjae Spears (Ten - RB)", "cost": 3}, {"name": "Will Lutz", "cost": 3}, {"name": "Lions", "cost": 3}], "CMAC": [{"name": "A.J. Brown (NE - WR)", "cost": 67}, {"name": "Derrick Henry (Bal - RB)", "cost": 60}, {"name": "Puka Nacua (LAR - WR)", "cost": 32}, {"name": "Jameson Williams (Det - WR)", "cost": 10}, {"name": "Chris Godwin Jr. (TB - WR)", "cost": 8}, {"name": "J.K. Dobbins (Den - RB)", "cost": 6}, {"name": "Joe Burrow (Cin - QB)", "cost": 3}, {"name": "Dalton Kincaid (Buf - TE)", "cost": 2}, {"name": "Seahawks (Sea - DEF)", "cost": 2}, {"name": "Broncos (Den - DEF)", "cost": 2}, {"name": "Isaiah Likely (NYG - TE)", "cost": 2}, {"name": "Alvin Kamara (NO - RB)", "cost": 2}, {"name": "Ray Davis (Buf - RB)", "cost": 2}, {"name": "Ka'imi Fairbairn (Hou - K)", "cost": 1}, {"name": "Jordan Love (GB - QB)", "cost": 1}]}, "teamMap": {"Borregalis Breads": "Jeff", "DownEast Dickerer": "Tony", "Cark McDowell": "Marc", "Finkle & Einhorn": "Adam", "Puke and Rally": "Dan", "Rumours": "Ken", "A Slightly Less Beautiful Mind": "Randy", "TeddDibiase": "Brad", "Pura Vida": "Ryan", "The Danger Zone": "Leeman", "Boston TD party": "Matt", "Red Zone Teddies": "CMAC"}, "processedTx": []}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKL Budget Tracker</title>
+<style>
+  :root{
+    --paper:#FCFBF8;
+    --ink:#1E1E1C;
+    --ink-dim:#75726A;
+    --cream:#F3DCB0;
+    --cream-soft:#FBF1DC;
+    --grid-line:#DFDCD2;
+    --spacer:#ECEAE3;
+    --ok:#2F7A42;
+    --danger:#B0402E;
+    --over-bg:#FBE4E0;
+    --over-head:#F0C3B9;
+    --over-foot:#F5D2C7;
+    --radius:4px;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Calibri,Carlito,'Segoe UI',Arial,sans-serif;
+    min-height:100vh;
+    font-size:14px;
+  }
+
+  .wrap{max-width:1240px;margin:0 auto;padding:24px 20px 70px;}
+
+  .topbar{
+    display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap;
+    gap:14px; border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:20px;
+  }
+  .topbar h1{font-size:22px; font-weight:700; margin:0; letter-spacing:-0.2px;}
+  .topbar .sub{font-size:12px; color:var(--ink-dim); margin-top:3px;}
+  .team-picker{display:flex; align-items:center; gap:8px; margin-top:10px; flex-wrap:wrap;}
+  .team-picker label{font-size:11px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.5px;}
+  .team-picker select{
+    font-family:inherit; font-size:13px; padding:6px 10px; border:1px solid var(--grid-line);
+    border-radius:4px; background:#fff; color:var(--ink); cursor:pointer;
+  }
+  .unpin-link{
+    background:none; border:none; color:var(--ink-dim); font-size:11px; text-decoration:underline;
+    cursor:pointer; font-family:inherit; padding:0;
+  }
+  .unpin-link:hover{color:var(--ink);}
+  .pin-badge{
+    display:inline-block; font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:.4px;
+    background:var(--ink); color:#fff; padding:2px 6px; border-radius:3px; margin-left:8px; vertical-align:middle;
+  }
+  .team.pinned{box-shadow:0 0 0 2px var(--ink);}
+  .stat-strip{display:flex; gap:22px; flex-wrap:wrap;}
+  .stat{text-align:right;}
+  .stat .v{font-size:16px; font-weight:700; font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:10px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.5px;}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    gap:16px 14px;
+  }
+  .team{
+    background:#fff; border:1px solid var(--grid-line); border-radius:var(--radius);
+    overflow:hidden; cursor:pointer; transition:box-shadow .12s, border-color .12s;
+  }
+  .team:hover{border-color:var(--ink-dim); box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+  .team.over{border-color:var(--danger); box-shadow:0 0 0 1px var(--danger);}
+  .team.over .team-head{background:var(--over-head);}
+  .team.over table.roster td{background:var(--over-bg);}
+  .team.over .team-foot{background:var(--over-foot);}
+  .team-head{
+    background:var(--cream); display:flex; justify-content:space-between; align-items:center;
+    padding:8px 12px; font-weight:700; font-size:14px;
+  }
+  .team-head .amt{font-variant-numeric:tabular-nums;}
+  table.roster{width:100%; border-collapse:collapse; font-size:12.5px;}
+  table.roster td{padding:6px 12px; border-bottom:1px solid var(--grid-line);}
+  table.roster tr:last-child td{border-bottom:none;}
+  table.roster td.cost{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; padding-left:6px;}
+  table.roster td.pname{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:0; width:100%;}
+  .team-spacer{height:10px; background:var(--spacer);}
+  .team-foot{
+    background:var(--cream-soft); display:flex; justify-content:space-between; align-items:center;
+    padding:7px 12px; font-size:12px; font-weight:700;
+  }
+  .team-foot .lbl{font-weight:500; color:var(--ink-dim); font-size:11px; text-transform:uppercase; letter-spacing:.4px;}
+  .team-foot .amt{font-variant-numeric:tabular-nums; font-size:15px;}
+  .amt.ok{color:var(--ok);}
+  .amt.over{color:var(--danger); font-weight:800;}
+  .over-flag{
+    display:inline-block; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:.5px;
+    background:var(--danger); color:#fff; padding:2px 7px; border-radius:3px; margin-left:8px; vertical-align:middle;
+  }
+
+  .overlay{
+    position:fixed; inset:0; background:rgba(20,18,14,0.55);
+    display:flex; align-items:center; justify-content:center; z-index:50; padding:20px; overflow-y:auto;
+  }
+  .panel{
+    background:#fff; border-radius:6px; max-width:860px; width:100%; max-height:88vh;
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  .panel-head{
+    background:var(--cream); display:flex; justify-content:space-between; align-items:center;
+    padding:16px 22px;
+  }
+  .panel-head h2{font-size:22px; margin:0;}
+  .panel-close{background:none; border:none; font-size:20px; cursor:pointer; color:var(--ink); line-height:1;}
+  .panel-body{display:flex; gap:0; overflow:hidden; flex:1;}
+  .panel-main{flex:1.5; overflow-y:auto; padding:20px 22px; border-right:1px solid var(--grid-line);}
+  .panel-side{flex:1; overflow-y:auto; padding:20px 22px; min-width:220px; max-width:280px;}
+
+  .meter-row{display:flex; gap:24px; margin-bottom:18px; flex-wrap:wrap;}
+  .meter-fig .v{font-size:24px; font-weight:700; font-variant-numeric:tabular-nums;}
+  .meter-fig .l{font-size:10px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.5px;}
+
+  table.full{width:100%; border-collapse:collapse; font-size:13.5px;}
+  table.full thead th{
+    text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.5px;
+    color:var(--ink-dim); font-weight:600; padding:6px 8px; border-bottom:2px solid var(--ink);
+  }
+  table.full td{padding:7px 8px; border-bottom:1px solid var(--grid-line);}
+  table.full td.cost{text-align:right; font-variant-numeric:tabular-nums; font-weight:600;}
+
+  .pos-title{font-size:12px; text-transform:uppercase; letter-spacing:.5px; font-weight:700; color:var(--ink-dim); margin-bottom:12px;}
+  .pos-row{margin-bottom:12px;}
+  .pos-row .pos-top{display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:4px;}
+  .pos-row .pos-name{font-weight:600;}
+  .pos-row .pos-amt{font-variant-numeric:tabular-nums; font-weight:600;}
+  .pos-track{height:7px; border-radius:4px; background:var(--spacer); overflow:hidden;}
+  .pos-fill{height:100%; border-radius:4px;}
+  .pos-note{font-size:11px; color:var(--ink-dim); margin-top:14px; line-height:1.5;}
+  .empty{color:var(--ink-dim); font-size:12.5px; padding:10px 2px;}
+
+  .footer-note{
+    margin-top:34px; padding-top:14px; border-top:1px solid var(--grid-line);
+    font-size:12px; color:var(--ink-dim); line-height:1.6;
+  }
+  .footer-note b{color:var(--ink);}
+
+  @media (max-width:720px){
+    .panel-body{flex-direction:column;}
+    .panel-main{border-right:none; border-bottom:1px solid var(--grid-line);}
+    .panel-side{max-width:none;}
+  }
+  @media (max-width:560px){
+    .topbar{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">Loading…</div>
+
+<script>
+const FALLBACK_LEAGUE = {"owners": ["Marc", "Matt", "Tony", "Adam", "Jeff", "Randy", "Ryan", "Ken", "Dan", "Leeman", "Brad", "CMAC"], "rosters": {"Marc": [{"name": "James Cook", "cost": 54}, {"name": "Amon-Ra St. Brown", "cost": 30}, {"name": "D'Andre Swift", "cost": 30}, {"name": "George Pickens", "cost": 22}, {"name": "Rhamondre Stevenson", "cost": 19}, {"name": "Kyle Pitts", "cost": 10}, {"name": "Hurts", "cost": 8}, {"name": "Michael Wilson", "cost": 7}, {"name": "Malik Davis", "cost": 6}, {"name": "Dallas Goerdert", "cost": 3}, {"name": "Will Reichard", "cost": 1}, {"name": "LAC DEF", "cost": 2}, {"name": "Woody Marks", "cost": 2}, {"name": "Bo Nix", "cost": 2}, {"name": "Jayden Reed", "cost": 2}, {"name": "Kimani Vidal", "cost": 1}, {"name": "Keenan Allen", "cost": 1}], "Matt": [{"name": "Bijan Robinson (Atl - RB)", "cost": 84}, {"name": "Garrett Wilson (NYJ - WR)", "cost": 29}, {"name": "Chris Olave (NO - WR)", "cost": 11}, {"name": "De'Von Achane (Mia - RB)", "cost": 9}, {"name": "Chris Rodriguez Jr. (Jax - RB)", "cost": 9}, {"name": "Kenny Gainwell (TB - RB)", "cost": 8}, {"name": "Jayden Daniels (Was - QB)", "cost": 7}, {"name": "George Kittle (SF - TE)", "cost": 7}, {"name": "Brian Thomas Jr. (Jax - WR)", "cost": 7}, {"name": "Terry McLaurin (Was - WR)", "cost": 5}, {"name": "Denzel Boston (Cle - WR)", "cost": 5}, {"name": "Rachaad White (Was - RB)", "cost": 4}, {"name": "Tyler Allgeier (Ari - RB)", "cost": 4}, {"name": "Cam Little (Jax - K)", "cost": 2}, {"name": "Ja'Kobi Lane", "cost": 3}, {"name": "Steelers (Pit - DEF)", "cost": 1}, {"name": "Malik Willis", "cost": 1}], "Tony": [{"name": "CeeDee Lamb (Dal - WR)", "cost": 62}, {"name": "Omarion Hampton (LAC - RB)", "cost": 42}, {"name": "Josh Jacobs (GB - RB)", "cost": 30}, {"name": "Josh Allen (Buf - QB)", "cost": 21}, {"name": "Rico Dowdle (Pit - RB)", "cost": 7}, {"name": "Aaron Jones Sr. (Min - RB)", "cost": 6}, {"name": "Romeo Doubs (NE - WR)", "cost": 6}, {"name": "Alec Pierce (Ind - WR)", "cost": 5}, {"name": "Jordyn Tyson (NO - WR)", "cost": 5}, {"name": "Travis Kelce (KC - TE)", "cost": 4}, {"name": "Michael Pittman Jr. (Pit - WR)", "cost": 4}, {"name": "Keaton Mitchell (LAC - RB)", "cost": 3}, {"name": "Brandon Aubrey (Dal - K)", "cost": 1}, {"name": "Ravens (Bal - DEF)", "cost": 1}, {"name": "Hunter Henry (NE - TE)", "cost": 1}, {"name": "Deebo Samuel Sr. (SF - WR)", "cost": 1}, {"name": "T.J. Hockenson (Min - TE)", "cost": 1}], "Adam": [{"name": "Zay Flowers (Bal - WR)", "cost": 48}, {"name": "Javonte Williams (Dal - RB)", "cost": 48}, {"name": "Carnell Tate (Ten - WR)", "cost": 18}, {"name": "Chase Brown (Cin - RB)", "cost": 16}, {"name": "Jordan Mason (Min - RB)", "cost": 14}, {"name": "Travis Etienne Jr. (NO - RB)", "cost": 11}, {"name": "Sam LaPorta (Det - TE)", "cost": 10}, {"name": "Nico Collins (Hou - WR)", "cost": 9}, {"name": "Dak Prescott (Dal - QB)", "cost": 9}, {"name": "KC Concepcion (Cle - WR)", "cost": 8}, {"name": "Tucker Kraft (GB - TE)", "cost": 6}, {"name": "Rams (LAR - DEF)", "cost": 2}, {"name": "Evan McPherson (Cin - K)", "cost": 1}], "Jeff": [{"name": "Malik Nabers (NYG - WR)", "cost": 51}, {"name": "Trey McBride (Ari - TE)", "cost": 36}, {"name": "Jonathan Taylor", "cost": 48}, {"name": "Tre Tucker", "cost": 2}, {"name": "Quinshon Judkins (Cle - RB)", "cost": 11}, {"name": "Kaleb Johnson", "cost": 3}, {"name": "Marvin Harrison Jr. (Ari - WR)", "cost": 10}, {"name": "Makai Lemon (Phi - WR)", "cost": 8}, {"name": "Jared Goff (Det - QB)", "cost": 6}, {"name": "Luther Burden III (Chi - WR)", "cost": 4}, {"name": "Kyle Monangai (Chi - RB)", "cost": 4}, {"name": "Jonah Coleman (Den - RB)", "cost": 4}, {"name": "Emmett Johnson (KC - RB)", "cost": 3}, {"name": "Chris Bell", "cost": 1}, {"name": "Spencer Shrader", "cost": 1}, {"name": "Braelon Allen (NYJ - RB)", "cost": 2}, {"name": "Roschon Johnson", "cost": 3}], "Randy": [{"name": "Jeremiyah Love (Ari - RB)", "cost": 50}, {"name": "Ja'Marr Chase (Cin - WR)", "cost": 30}, {"name": "Kenneth Walker III (KC - RB)", "cost": 27}, {"name": "Davante Adams (LAR - WR)", "cost": 23}, {"name": "DJ Moore (Buf - WR)", "cost": 17}, {"name": "De'Zhaun Stribling (SF - WR)", "cost": 13}, {"name": "Mike Washington Jr. (LV - RB)", "cost": 12}, {"name": "Harold Fannin Jr. (Cle - TE)", "cost": 7}, {"name": "Courtland Sutton (Den - WR)", "cost": 7}, {"name": "Caleb Williams (Chi - QB)", "cost": 3}, {"name": "Texans (Hou - DEF)", "cost": 3}, {"name": "Patrick Mahomes (KC - QB)", "cost": 2}, {"name": "Cameron Dicker (LAC - K)", "cost": 2}, {"name": "Kaelon Black", "cost": 2}, {"name": "Kenyon Sadiq (NYJ - TE)", "cost": 1}, {"name": "Kyle Williams (NE - WR)", "cost": 1}], "Ryan": [{"name": "Jahmyr Gibbs (Det - RB)", "cost": 41}, {"name": "Bhayshul Tuten (Jax - RB)", "cost": 23}, {"name": "Jonathon Brooks (Car - RB)", "cost": 22}, {"name": "Emeka Egbuka (TB - WR)", "cost": 21}, {"name": "Parker Washington (Jax - WR)", "cost": 21}, {"name": "Brock Bowers (LV - TE)", "cost": 15}, {"name": "Jaylen Warren (Pit - RB)", "cost": 12}, {"name": "Matthew Golden (GB - WR)", "cost": 6}, {"name": "Trevor Lawrence (Jax - QB)", "cost": 5}, {"name": "Justin Herbert (LAC - QB)", "cost": 5}, {"name": "Stefon Diggs (Was - WR)", "cost": 5}, {"name": "Josh Downs (Ind - WR)", "cost": 5}, {"name": "Michael Mayer", "cost": 3}, {"name": "Wan'Dale Robinson (Ten - WR)", "cost": 4}, {"name": "Dylan Sampson (Cle - RB)", "cost": 3}, {"name": "Patriots (NE - DEF)", "cost": 1}, {"name": "Jake Bates (Det - K)", "cost": 1}], "Ken": [{"name": "Saquon Barkley (Phi - RB)", "cost": 36}, {"name": "Tee Higgins (Cin - WR)", "cost": 36}, {"name": "Bucky Irving (TB - RB)", "cost": 26}, {"name": "Christian Watson (GB - WR)", "cost": 21}, {"name": "Tyler Warren (Ind - TE)", "cost": 17}, {"name": "Lamar Jackson (Bal - QB)", "cost": 16}, {"name": "Mike Evans (SF - WR)", "cost": 12}, {"name": "MarShawn Lloyd (GB - RB)", "cost": 10}, {"name": "Rome Odunze (Chi - WR)", "cost": 6}, {"name": "Jacory Croskey-Merritt (Was - RB)", "cost": 5}, {"name": "Jalen Coker (Car - WR)", "cost": 4}, {"name": "Jordan Addison (Min - WR)", "cost": 2}, {"name": "Mark Andrews (Bal - TE)", "cost": 2}, {"name": "Jaguars (Jax - DEF)", "cost": 1}, {"name": "Tyler Loop (Bal - K)", "cost": 1}, {"name": "Tank Bigsby (Phi - RB)", "cost": 1}, {"name": "Kyler Murray", "cost": 3}], "Dan": [{"name": "Christian McCaffrey (SF - RB)", "cost": 79}, {"name": "Jadarian Price (Sea - RB)", "cost": 29}, {"name": "David Montgomery (Hou - RB)", "cost": 28}, {"name": "Ladd McConkey (LAC - WR)", "cost": 19}, {"name": "DeVonta Smith (Phi - WR)", "cost": 17}, {"name": "Drake London (Atl - WR)", "cost": 15}, {"name": "Jake Ferguson", "cost": 2}, {"name": "Zach Charbonnet (Sea - RB)", "cost": 2}, {"name": "Brock Purdy (SF - QB)", "cost": 2}, {"name": "Brian Robinson (Atl - RB)", "cost": 2}, {"name": "Eagles (Phi - DEF)", "cost": 1}, {"name": "Jason Myers (Sea - K)", "cost": 1}, {"name": "Jaxon Dart", "cost": 1}, {"name": "Brenton Strange (Jax - TE)", "cost": 1}], "Leeman": [{"name": "Tetairoa McMillan (Car - WR)", "cost": 49}, {"name": "Breece Hall", "cost": 30}, {"name": "Jaxon Smith-Njigba (Sea - WR)", "cost": 41}, {"name": "Kyren Williams (LAR - RB)", "cost": 26}, {"name": "Tyler Shough", "cost": 1}, {"name": "Chuba Hubbard (Car - RB)", "cost": 6}, {"name": "Jakobi Meyers (Jax - WR)", "cost": 5}, {"name": "Matthew Stafford (LAR - QB)", "cost": 2}, {"name": "Caleb Douglas (Mia - WR)", "cost": 2}, {"name": "Najee Harris (NYG - RB)", "cost": 1}, {"name": "Oronde Gadsden (LAC - TE)", "cost": 1}, {"name": "Nicholas Singleton (Ten - RB)", "cost": 1}, {"name": "Giants (NYG - DEF)", "cost": 1}, {"name": "Chig Okonkwo", "cost": 1}, {"name": "Harrison Mevis", "cost": 3}, {"name": "Jaylen Waddle", "cost": 14}, {"name": "Blake Corum", "cost": 11}], "Brad": [{"name": "Ashton Jeanty (LV - RB)", "cost": 45}, {"name": "Rashee Rice (KC - WR)", "cost": 31}, {"name": "TreVeyon Henderson (NE - RB)", "cost": 26}, {"name": "Drake Maye (NE - QB)", "cost": 16}, {"name": "Justin Jefferson (Min - WR)", "cost": 15}, {"name": "DK Metcalf (Pit - WR)", "cost": 10}, {"name": "Tony Pollard (Ten - RB)", "cost": 9}, {"name": "RJ Harvey (Den - RB)", "cost": 7}, {"name": "Quentin Johnston (LAC - WR)", "cost": 7}, {"name": "Cam Skattebo (NYG - RB)", "cost": 5}, {"name": "Colston Loveland (Chi - TE)", "cost": 5}, {"name": "Malachi Fields (NYG - WR)", "cost": 4}, {"name": "Juwan Johnson (NO - TE)", "cost": 4}, {"name": "Baker Mayfield (TB - QB)", "cost": 3}, {"name": "Tyjae Spears (Ten - RB)", "cost": 3}, {"name": "Will Lutz", "cost": 3}, {"name": "Lions", "cost": 3}], "CMAC": [{"name": "A.J. Brown (NE - WR)", "cost": 67}, {"name": "Derrick Henry (Bal - RB)", "cost": 60}, {"name": "Puka Nacua (LAR - WR)", "cost": 32}, {"name": "Jameson Williams (Det - WR)", "cost": 10}, {"name": "Chris Godwin Jr. (TB - WR)", "cost": 8}, {"name": "J.K. Dobbins (Den - RB)", "cost": 6}, {"name": "Joe Burrow (Cin - QB)", "cost": 3}, {"name": "Dalton Kincaid (Buf - TE)", "cost": 2}, {"name": "Seahawks (Sea - DEF)", "cost": 2}, {"name": "Broncos (Den - DEF)", "cost": 2}, {"name": "Isaiah Likely (NYG - TE)", "cost": 2}, {"name": "Alvin Kamara (NO - RB)", "cost": 2}, {"name": "Ray Davis (Buf - RB)", "cost": 2}, {"name": "Ka'imi Fairbairn (Hou - K)", "cost": 1}, {"name": "Jordan Love (GB - QB)", "cost": 1}]}};
+
+let LEAGUE = null;
+let usingFallback = false;
+
+async function loadLeague(){
+  try{
+    const res = await fetch('/api/league', { cache: 'no-store' });
+    if(!res.ok) throw new Error('bad status ' + res.status);
+    const data = await res.json();
+    if(!data || !data.owners || !data.rosters) throw new Error('malformed response');
+    LEAGUE = data;
+    usingFallback = false;
+  }catch(e){
+    LEAGUE = FALLBACK_LEAGUE;
+    usingFallback = true;
+  }
+}
+
+const CAP = 200;
+const POS_COLORS = { QB:'#3B6E8F', RB:'#3F7A4F', WR:'#B0563A', TE:'#8B6E3F', K:'#6B6B6B', DEF:'#5B4B8A', UNLISTED:'#A8A8A8' };
+const POS_ORDER = ['QB','RB','WR','TE','K','DEF','UNLISTED'];
+const NFL_TEAM_NAMES = ['cardinals','falcons','ravens','bills','panthers','bears','bengals','browns','cowboys','broncos','lions','packers','texans','colts','jaguars','chiefs','raiders','chargers','rams','dolphins','vikings','patriots','saints','giants','jets','eagles','steelers','49ers','niners','seahawks','buccaneers','bucs','titans','commanders','washington'];
+
+// Manually filled in for players whose roster entry had no (Team - Pos) tag.
+// Only added where confident; a couple of unclear names are left untagged on purpose.
+const POSITION_OVERRIDES = {
+  "James Cook":"RB","Amon-Ra St. Brown":"WR","D'Andre Swift":"RB","George Pickens":"WR",
+  "Rhamondre Stevenson":"RB","Kyle Pitts":"TE","Hurts":"QB","Michael Wilson":"WR",
+  "Malik Davis":"RB","Dallas Goerdert":"TE","Will Reichard":"K","Woody Marks":"RB",
+  "Bo Nix":"QB","Jayden Reed":"WR","Kimani Vidal":"RB","Keenan Allen":"WR",
+  "Ja'Kobi Lane":"WR","Malik Willis":"QB","Jonathan Taylor":"RB","Tre Tucker":"WR",
+  "Kaleb Johnson":"RB","Spencer Shrader":"K","Roschon Johnson":"RB","Michael Mayer":"TE",
+  "Kyler Murray":"QB","Jake Ferguson":"TE","Jaxon Dart":"QB","Breece Hall":"RB",
+  "Tyler Shough":"QB","Chig Okonkwo":"TE","Harrison Mevis":"K","Jaylen Waddle":"WR",
+  "Blake Corum":"RB","Will Lutz":"K"
+};
+
+let overlay = null; // owner name string, or null
+let pinnedOwner = null; // owner name pinned to the top of the grid, or null
+
+function initPinFromUrl(){
+  const params = new URLSearchParams(window.location.search);
+  const me = params.get('me');
+  if(me && LEAGUE.owners.includes(me)) pinnedOwner = me;
+}
+
+function selectTeam(name){
+  if(!name) return;
+  pinnedOwner = name;
+  const url = new URL(window.location);
+  url.searchParams.set('me', name);
+  history.replaceState(null, '', url);
+  openTeam(name);
+}
+
+function unpinTeam(){
+  pinnedOwner = null;
+  const url = new URL(window.location);
+  url.searchParams.delete('me');
+  history.replaceState(null, '', url);
+  render();
+}
+
+function spent(owner){ return LEAGUE.rosters[owner].reduce((s,p)=>s+p.cost,0); }
+function remaining(owner){ return CAP - spent(owner); }
+function statusClass(rem){ return rem < 0 ? 'over' : 'ok'; }
+
+function getPosition(name){
+  const m = name.match(/\(([A-Za-z]+)\s*-\s*(QB|RB|WR|TE|K|DEF)\)/i);
+  if(m) return m[2].toUpperCase();
+  if(/\bDEF\b/i.test(name)) return 'DEF';
+  const bare = name.trim().toLowerCase();
+  if(NFL_TEAM_NAMES.includes(bare)) return 'DEF';
+  if(POSITION_OVERRIDES[name.trim()]) return POSITION_OVERRIDES[name.trim()];
+  return 'UNLISTED';
+}
+
+function positionBreakdown(owner){
+  const buckets = {};
+  LEAGUE.rosters[owner].forEach(p=>{
+    const pos = getPosition(p.name);
+    buckets[pos] = (buckets[pos]||0) + p.cost;
+  });
+  const total = spent(owner) || 1;
+  return POS_ORDER.filter(p=>buckets[p]).map(p=>({
+    pos:p, amount:buckets[p], pct: Math.round((buckets[p]/total)*100), color:POS_COLORS[p]
+  }));
+}
+function posLabel(p){ return p==='UNLISTED' ? 'No position tag' : p; }
+function esc(s){ return s.replace(/'/g,"\\'"); }
+
+function render(){
+  const app = document.getElementById('app');
+  const totalRemaining = LEAGUE.owners.reduce((s,o)=>s+remaining(o),0);
+  const tightest = [...LEAGUE.owners].sort((a,b)=>remaining(a)-remaining(b))[0];
+
+  let html = `
+    <div class="topbar">
+      <div>
+        <h1>AKL Budget Tracker</h1>
+        <div class="sub">2026 season · FAAB &amp; waiver ledger · ${LEAGUE.owners.length} teams · view only</div>
+        <div class="team-picker">
+          <label for="teamSelect">Your team</label>
+          <select id="teamSelect" onchange="selectTeam(this.value)">
+            <option value="">Jump to a team…</option>
+            ${LEAGUE.owners.map(o=>`<option value="${o}" ${o===pinnedOwner?'selected':''}>${o}</option>`).join('')}
+          </select>
+          ${pinnedOwner ? `<button class="unpin-link" onclick="unpinTeam()">Unpin ${pinnedOwner}</button>` : ''}
+        </div>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><div class="v">$${CAP}</div><div class="l">Cap / team</div></div>
+        <div class="stat"><div class="v">$${totalRemaining}</div><div class="l">League $ open</div></div>
+        <div class="stat"><div class="v">${tightest}</div><div class="l">Tightest budget</div></div>
+      </div>
+    </div>
+    <div class="grid">
+  `;
+
+  const orderedOwners = pinnedOwner ? [pinnedOwner, ...LEAGUE.owners.filter(o=>o!==pinnedOwner)] : LEAGUE.owners;
+
+  orderedOwners.forEach(owner=>{
+    const rem = remaining(owner);
+    const sp = spent(owner);
+    const cls = statusClass(rem);
+    const isPinned = owner === pinnedOwner;
+    const roster = [...LEAGUE.rosters[owner]].sort((a,b)=>b.cost-a.cost);
+    html += `
+      <div class="team ${cls==='over' ? 'over' : ''} ${isPinned ? 'pinned' : ''}" onclick="openTeam('${esc(owner)}')">
+        <div class="team-head"><span>${owner}${isPinned ? '<span class="pin-badge">You</span>' : ''}${cls==='over' ? '<span class="over-flag">Over budget</span>' : ''}</span><span class="amt">$${sp}</span></div>
+        <table class="roster"><tbody>
+          ${roster.map(p=>`<tr><td class="pname">${p.name}</td><td class="cost">$${p.cost}</td></tr>`).join('')}
+        </tbody></table>
+        <div class="team-spacer"></div>
+        <div class="team-foot"><span class="lbl">${cls==='over' ? 'Over by' : 'Remaining'}</span><span class="amt ${cls}">$${Math.abs(rem)}</span></div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+
+  html += `<div class="footer-note">
+    <b>How this works.</b> Cap is $${CAP} per team. Spent = sum of every rostered player's cost. Click any team to open it larger and see where its budget went by position.<br><br>
+    <b>Pin your team.</b> Pick your name from "Your team" above and it'll pin your roster to the top of the page. The link updates with your name in it (e.g. ?me=Marc) &mdash; bookmark that version of the page and it'll always open with your team pinned first.<br><br>
+    <b>This page is read-only.</b> Nobody can edit costs from here &mdash; league members can only view.
+    ${usingFallback ? '<br><br><b style="color:var(--danger);">Showing a saved snapshot</b> &mdash; couldn\'t reach live data just now. Refresh in a bit.' : ''}
+  </div>`;
+
+  app.innerHTML = html + (overlay ? teamPanelHtml(overlay) : '');
+}
+
+function openTeam(owner){ overlay = owner; render(); }
+function closeOverlay(){ overlay = null; render(); }
+
+function teamPanelHtml(owner){
+  const rem = remaining(owner);
+  const sp = spent(owner);
+  const cls = statusClass(rem);
+  const roster = [...LEAGUE.rosters[owner]].sort((a,b)=>b.cost-a.cost);
+  const breakdown = positionBreakdown(owner);
+
+  let main = '';
+  if(cls==='over'){
+    main += `<div style="background:var(--over-bg); border:1px solid var(--danger); border-radius:4px; padding:10px 14px; margin-bottom:16px; font-size:13px; font-weight:700; color:var(--danger);">
+      ${owner} is $${Math.abs(rem)} over the $${CAP} cap.
+    </div>`;
+  }
+  main += `
+    <div class="meter-row">
+      <div class="meter-fig"><div class="v">$${sp}</div><div class="l">Spent</div></div>
+      <div class="meter-fig"><div class="v" style="color:${cls==='over' ? 'var(--danger)' : 'var(--ok)'}">$${rem}</div><div class="l">${cls==='over' ? 'Over by' : 'Remaining'}</div></div>
+      <div class="meter-fig"><div class="v">$${CAP}</div><div class="l">Cap</div></div>
+      <div class="meter-fig"><div class="v">${roster.length}</div><div class="l">Players</div></div>
+    </div>
+    <table class="full">
+      <thead><tr><th>Player</th><th style="text-align:right;">Cost</th></tr></thead>
+      <tbody>
+        ${roster.map(p=>`<tr><td>${p.name}</td><td class="cost">$${p.cost}</td></tr>`).join('')}
+      </tbody>
+    </table>
+  `;
+
+  let side = `<div class="pos-title">Budget by position</div>`;
+  if(breakdown.length===0){
+    side += `<div class="empty">No spend to break down yet.</div>`;
+  } else {
+    breakdown.forEach(b=>{
+      side += `
+        <div class="pos-row">
+          <div class="pos-top"><span class="pos-name" style="color:${b.color}">${posLabel(b.pos)}</span><span class="pos-amt">$${b.amount}</span></div>
+          <div class="pos-track"><div class="pos-fill" style="width:${b.pct}%; background:${b.color}"></div></div>
+        </div>`;
+    });
+    side += `<div class="pos-note">Shares are of $${sp} spent so far.</div>`;
+  }
+
+  return `<div class="overlay" onclick="if(event.target===this) closeOverlay()">
+    <div class="panel">
+      <div class="panel-head" style="${cls==='over' ? 'background:var(--over-head);' : ''}"><h2>${owner}</h2><button class="panel-close" onclick="closeOverlay()">&times;</button></div>
+      <div class="panel-body">
+        <div class="panel-main">${main}</div>
+        <div class="panel-side">${side}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+(async function init(){
+  await loadLeague();
+  initPinFromUrl();
+  render();
+  setInterval(async () => {
+    await loadLeague();
+    render();
+  }, 60000);
+})();
+</script>
+</body>
+</html>
+
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/league"
+  to = "/.netlify/functions/get-league"
+  status = 200
+
+[[redirects]]
+  from = "/api/submit"
+  to = "/.netlify/functions/submit-transactions"
+  status = 200
+
+{
+  "name": "akl-budget-tracker",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "akl-budget-tracker",
+      "version": "1.0.0",
+      "dependencies": {
+        "@netlify/blobs": "^8.2.0",
+        "terser": "^5.51.2"
+      }
+    },
+    "node_modules/@jridgewell/gen-mapping": {
+      "version": "0.3.13",
+      "resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/sourcemap-codec": "^1.5.0",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@jridgewell/source-map": {
+      "version": "0.3.11",
+      "resolved": "https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.11.tgz",
+      "integrity": "sha512-ZMp1V8ZFcPG5dIWnQLr3NSI1MiCU7UETdS/A0G8V/XWHvJv3ZsFqutJn1Y5RPmAPX6F3BiE397OqveU/9NCuIA==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/gen-mapping": "^0.3.5",
+        "@jridgewell/trace-mapping": "^0.3.25"
+      }
+    },
+    "node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "license": "MIT"
+    },
+    "node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.31",
+      "resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/resolve-uri": "^3.1.0",
+        "@jridgewell/sourcemap-codec": "^1.4.14"
+      }
+    },
+    "node_modules/@netlify/blobs": {
+      "version": "8.2.0",
+      "resolved": "https://registry.npmjs.org/@netlify/blobs/-/blobs-8.2.0.tgz",
+      "integrity": "sha512-9djLZHBKsoKk8XCgwWSEPK9QnT8qqxEQGuYh48gFIcNLvpBKkLnHbDZuyUxmNemCfDz7h0HnMXgSPnnUVgARhg==",
+      "license": "MIT",
+      "engines": {
+        "node": "^14.16.0 || >=16.0.0"
+      }
+    },
+    "node_modules/acorn": {
+      "version": "8.18.0",
+      "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.18.0.tgz",
+      "integrity": "sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==",
+      "license": "MIT",
+      "bin": {
+        "acorn": "bin/acorn"
+      },
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/buffer-from": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
+      "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
+      "license": "MIT"
+    },
+    "node_modules/commander": {
+      "version": "2.20.3",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz",
+      "integrity": "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==",
+      "license": "MIT"
+    },
+    "node_modules/source-map": {
+      "version": "0.6.1",
+      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
+      "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/source-map-support": {
+      "version": "0.5.21",
+      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz",
+      "integrity": "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==",
+      "license": "MIT",
+      "dependencies": {
+        "buffer-from": "^1.0.0",
+        "source-map": "^0.6.0"
+      }
+    },
+    "node_modules/terser": {
+      "version": "5.51.2",
+      "resolved": "https://registry.npmjs.org/terser/-/terser-5.51.2.tgz",
+      "integrity": "sha512-bWnjSNscmuI+GJze6ZupnHP8G/cTcsJF+bXCeQknk2SHQsgbNJnLrqiH9jZ2W4STPVXH2mDKKRX3iwPhc9Cn/Q==",
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "@jridgewell/source-map": "^0.3.3",
+        "acorn": "^8.15.0",
+        "commander": "^2.20.0",
+        "source-map-support": "~0.5.20"
+      },
+      "bin": {
+        "terser": "bin/terser"
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    }
+  }
+}
+
+{
+  "name": "akl-budget-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0",
+    "terser": "^5.51.2"
+  }
+}
