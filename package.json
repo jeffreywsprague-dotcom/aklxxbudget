@@ -1,0 +1,9 @@
+{
+  "name": "akl-budget-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0",
+    "terser": "^5.51.2"
+  }
+}
