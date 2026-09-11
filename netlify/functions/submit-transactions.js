@@ -30,15 +30,17 @@ exports.handler = async function (event) {
     }
 
     const moves = Array.isArray(payload.moves) ? payload.moves : [];
+    const dryRun = payload.dryRun === true;
     const store = getLeagueStore();
-    let data = await store.get('current', { type: 'json' });
-    if (!data) {
+    let liveData = await store.get('current', { type: 'json' });
+    if (!liveData) {
       return {
         statusCode: 500,
         headers,
         body: JSON.stringify({ error: 'No league data yet — load the tracker page once first, then retry.' }),
       };
     }
+    const data = dryRun ? JSON.parse(JSON.stringify(liveData)) : liveData;
 
     data.processedTx = data.processedTx || [];
     const applied = [];
@@ -48,7 +50,7 @@ exports.handler = async function (event) {
 
     for (const mv of moves) {
       if (!mv || !mv.uid || !mv.type) continue;
-      if (data.processedTx.includes(mv.uid)) {
+      if (!dryRun && data.processedTx.includes(mv.uid)) {
         skippedDup.push(mv);
         continue;
       }
@@ -104,12 +106,15 @@ exports.handler = async function (event) {
       }
     }
 
-    await store.setJSON('current', data);
+    if (!dryRun) {
+      await store.setJSON('current', data);
+    }
 
     return {
       statusCode: 200,
       headers,
       body: JSON.stringify({
+        dryRun,
         appliedCount: applied.length,
         skippedDupCount: skippedDup.length,
         notFound,
