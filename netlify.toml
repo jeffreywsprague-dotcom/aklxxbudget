@@ -15,3 +15,8 @@
   from = "/api/ping"
   to = "/.netlify/functions/ping"
   status = 200
+
+[[redirects]]
+  from = "/api/blobtest"
+  to = "/.netlify/functions/blobtest"
+  status = 200
