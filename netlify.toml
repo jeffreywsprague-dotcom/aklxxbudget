@@ -30,3 +30,8 @@
   from = "/api/audit"
   to = "/.netlify/functions/audit"
   status = 200
+
+[[redirects]]
+  from = "/api/fix"
+  to = "/.netlify/functions/fix-known-issues"
+  status = 200
