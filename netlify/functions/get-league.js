@@ -1,4 +1,4 @@
-const { getStore } = require('@netlify/blobs');
+const { getLeagueStore } = require('./lib/blobStore');
 const DEFAULT_DATA = require('../../default-data.json');
 
 exports.handler = async function () {
@@ -8,7 +8,7 @@ exports.handler = async function () {
     'Cache-Control': 'no-store',
   };
   try {
-    const store = getStore('akl-league');
+    const store = getLeagueStore();
     let data = await store.get('current', { type: 'json' });
     if (!data) {
       data = DEFAULT_DATA;
@@ -16,6 +16,6 @@ exports.handler = async function () {
     }
     return { statusCode: 200, headers, body: JSON.stringify(data) };
   } catch (err) {
-    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
+    return { statusCode: 200, headers, body: JSON.stringify({ crashed: true, message: err.message, stack: err.stack }) };
   }
 };
