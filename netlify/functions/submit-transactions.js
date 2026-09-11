@@ -1,1 +1,126 @@
-javascript:%21function%28%29%7Bfunction%20t%28t%29%7Bfor%28var%20e%3D0%2Cr%3D0%3Br%3Ct.length%3Br%2B%2B%29e%3DMath.imul%2831%2Ce%29%2Bt.charCodeAt%28r%29%7C0%3Breturn%22h%22%2B%28e%3E%3E%3E0%29.toString%2836%29%7Dvar%20e%3D%5B%5D%3Bdocument.querySelectorAll%28%22table.Tst-transaction-table%20tr%22%29.forEach%28function%28r%29%7Bvar%20n%3Dr.querySelector%28%22td.Ta-end%20a%22%29%3Bif%28n%29%7Bvar%20a%3Dn.textContent.trim%28%29%2Co%3Dr.querySelector%28%22.F-timestamp%22%29%2Ci%3Do%3Fo.textContent.trim%28%29%3A%22%22%2Cs%3Dr.querySelector%28%22td.Fz-xxs%22%29%3Bif%28s%26%26/traded%20to/i.test%28s.textContent%29%29%7Bvar%20l%3Dr.querySelector%28%22td.No-pstart%2C%20td.Fill-x%22%29%3Bif%28%21l%29return%3Bl.querySelectorAll%28%22p%22%29.forEach%28function%28r%29%7Bvar%20n%3Dr.querySelector%28%22a%22%29%2Co%3Dr.querySelector%28%22.F-position%22%29%3Bif%28n%29%7Bvar%20s%3Dn.textContent.trim%28%29%2Cl%3Do%3Fo.textContent.trim%28%29%3A%22%22%2Cc%3Dt%28%22trade%7C%22%2Ba%2B%22%7C%22%2Bs%2B%22%7C%22%2Bi%29%3Be.push%28%7Btype%3A%22trade_leg%22%2CtoTeam%3Aa%2Cplayer%3As%2Cpos%3Al%2Ctimestamp%3Ai%2Cuid%3Ac%7D%29%7D%7D%29%7Delse%20r.querySelectorAll%28%22.Pbot-xs%22%29.forEach%28function%28r%29%7Bvar%20n%3Dr.querySelector%28%22a%22%29%2Co%3Dr.querySelector%28%22.F-position%22%29%2Cs%3Dr.querySelector%28%22h6.F-shade%22%29%3Bif%28n%26%26s%29%7Bvar%20l%3Dn.textContent.trim%28%29%2Cc%3Do%3Fo.textContent.trim%28%29%3A%22%22%2Cu%3Dfunction%28t%29%7Bvar%20e%3Dt.match%28/%5C%24%28%5Cd%2B%29%5Cs%2AWaiver/i%29%3Breturn%20e%3F%7Btype%3A%22add%22%2Ccost%3AparseInt%28e%5B1%5D%2C10%29%7D%3A/free%20agent/i.test%28t%29%3F%7Btype%3A%22add%22%2Ccost%3A3%7D%3A/to%20waivers/i.test%28t%29%7C%7C/to%20free%20agent/i.test%28t%29%3F%7Btype%3A%22drop%22%7D%3Anull%7D%28s.textContent.trim%28%29%29%3Bif%28u%29%7Bvar%20p%3Dt%28u.type%2B%22%7C%22%2Ba%2B%22%7C%22%2Bl%2B%22%7C%22%2Bi%29%3Be.push%28Object.assign%28%7Bteam%3Aa%2Cplayer%3Al%2Cpos%3Ac%2Ctimestamp%3Ai%2Cuid%3Ap%7D%2Cu%29%29%7D%7D%7D%29%7D%7D%29%2C0%21%3D%3De.length%3Ffetch%28%22https%3A//aklxxbudgets.netlify.app/api/submit%22%2C%7Bmethod%3A%22POST%22%2Cheaders%3A%7B%22Content-Type%22%3A%22application/json%22%2C%22X-Api-Key%22%3A%22pQ8z64syy4c-d1Tr5_i_Ub5lEqGY0q7m%22%7D%2Cbody%3AJSON.stringify%28%7Bmoves%3Ae%7D%29%7D%29.then%28function%28t%29%7Breturn%20t.json%28%29%7D%29.then%28function%28t%29%7Bif%28t.crashed%29alert%28%22AKL%20Tracker%20crashed%20on%20the%20server%3A%5Cn%22%2Bt.message%2B%22%5Cn%5Cn%22%2Bt.stack%29%3Belse%7Bvar%20r%3D%22AKL%20Tracker%5CnSent%3A%20%22%2Be.length%2B%22%5CnApplied%3A%20%22%2Bt.appliedCount%2B%22%5CnAlready%20up%20to%20date%3A%20%22%2Bt.skippedDupCount%3Bt.notFound%26%26t.notFound.length%26%26%28r%2B%3D%22%5CnCheck%20manually%3A%20%22%2Bt.notFound.map%28function%28t%29%7Breturn%20t.player%7D%29.join%28%22%2C%20%22%29%29%2Calert%28r%29%7D%7D%29.catch%28function%28t%29%7Balert%28%22AKL%20Tracker%3A%20error%20sending%20update%20%E2%80%94%20%22%2Bt.message%29%7D%29%3Aalert%28%22AKL%20Tracker%3A%20no%20transactions%20found%20on%20this%20page.%22%29%7D%28%29%3B
+const { getLeagueStore } = require('./lib/blobStore');
+
+function baseName(n) {
+  return n.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
+}
+
+exports.handler = async function (event) {
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type, X-Api-Key',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Content-Type': 'application/json',
+  };
+
+  if (event.httpMethod === 'OPTIONS') {
+    return { statusCode: 200, headers, body: '' };
+  }
+
+  try {
+    const key = event.headers['x-api-key'] || event.headers['X-Api-Key'];
+    if (!key || key !== process.env.BOOKMARKLET_KEY) {
+      return { statusCode: 401, headers, body: JSON.stringify({ error: 'Unauthorized' }) };
+    }
+
+    let payload;
+    try {
+      payload = JSON.parse(event.body || '{}');
+    } catch (e) {
+      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Bad JSON body' }) };
+    }
+
+    const moves = Array.isArray(payload.moves) ? payload.moves : [];
+    const store = getLeagueStore();
+    let data = await store.get('current', { type: 'json' });
+    if (!data) {
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ error: 'No league data yet — load the tracker page once first, then retry.' }),
+      };
+    }
+
+    data.processedTx = data.processedTx || [];
+    const applied = [];
+    const skippedDup = [];
+    const notFound = [];
+    const unmappedTeam = [];
+
+    for (const mv of moves) {
+      if (!mv || !mv.uid || !mv.type) continue;
+      if (data.processedTx.includes(mv.uid)) {
+        skippedDup.push(mv);
+        continue;
+      }
+
+      if (mv.type === 'add') {
+        const owner = data.teamMap[mv.team];
+        if (!owner) {
+          unmappedTeam.push(mv);
+          continue;
+        }
+        const fullName = mv.pos ? `${mv.player} (${mv.pos})` : mv.player;
+        data.rosters[owner].push({ name: fullName, cost: mv.cost });
+        applied.push(mv);
+        data.processedTx.push(mv.uid);
+      } else if (mv.type === 'drop') {
+        const owner = data.teamMap[mv.team];
+        if (!owner) {
+          unmappedTeam.push(mv);
+          continue;
+        }
+        const idx = data.rosters[owner].findIndex((p) => baseName(p.name) === baseName(mv.player));
+        if (idx === -1) {
+          notFound.push(mv);
+        } else {
+          data.rosters[owner].splice(idx, 1);
+          applied.push(mv);
+        }
+        data.processedTx.push(mv.uid);
+      } else if (mv.type === 'trade_leg') {
+        const toOwner = data.teamMap[mv.toTeam];
+        if (!toOwner) {
+          unmappedTeam.push(mv);
+          continue;
+        }
+        let cost = null;
+        let fromOwner = null;
+        let fromIdx = -1;
+        for (const [owner, roster] of Object.entries(data.rosters)) {
+          const idx = roster.findIndex((p) => baseName(p.name) === baseName(mv.player));
+          if (idx !== -1) {
+            fromOwner = owner;
+            fromIdx = idx;
+            cost = roster[idx].cost;
+            break;
+          }
+        }
+        if (fromOwner) data.rosters[fromOwner].splice(fromIdx, 1);
+        const fullName = mv.pos ? `${mv.player} (${mv.pos})` : mv.player;
+        data.rosters[toOwner].push({ name: fullName, cost: cost == null ? 3 : cost });
+        if (cost == null) notFound.push(mv);
+        applied.push(mv);
+        data.processedTx.push(mv.uid);
+      }
+    }
+
+    await store.setJSON('current', data);
+
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({
+        appliedCount: applied.length,
+        skippedDupCount: skippedDup.length,
+        notFound,
+        unmappedTeam,
+      }),
+    };
+  } catch (err) {
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({ crashed: true, message: err.message, stack: err.stack }),
+    };
+  }
+};
