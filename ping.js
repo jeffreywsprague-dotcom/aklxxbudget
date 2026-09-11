@@ -1,0 +1,17 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/league"
+  to = "/.netlify/functions/get-league"
+  status = 200
+
+[[redirects]]
+  from = "/api/submit"
+  to = "/.netlify/functions/submit-transactions"
+  status = 200
+
+[[redirects]]
+  from = "/api/ping"
+  to = "/.netlify/functions/ping"
+  status = 200
