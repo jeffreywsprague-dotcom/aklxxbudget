@@ -20,3 +20,8 @@
   from = "/api/blobtest"
   to = "/.netlify/functions/blobtest"
   status = 200
+
+[[redirects]]
+  from = "/api/cleanup"
+  to = "/.netlify/functions/cleanup-dupes"
+  status = 200
