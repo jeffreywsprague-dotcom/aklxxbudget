@@ -25,3 +25,8 @@
   from = "/api/cleanup"
   to = "/.netlify/functions/cleanup-dupes"
   status = 200
+
+[[redirects]]
+  from = "/api/audit"
+  to = "/.netlify/functions/audit"
+  status = 200
