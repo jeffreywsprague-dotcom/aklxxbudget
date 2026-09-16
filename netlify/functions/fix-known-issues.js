@@ -12,7 +12,7 @@ const REMOVALS = [
 ];
 
 function normalize(s) {
-  return s.replace(/\s+/g, ' ').trim().toLowerCase();
+  return s.replace(/[^a-z0-9]/gi, '').toLowerCase();
 }
 
 exports.handler = async function (event) {
