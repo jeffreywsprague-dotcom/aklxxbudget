@@ -1,19 +1,17 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const REMOVALS = [
+  { owner: 'Jeff', name: 'Titans (Ten - DEF)' },
   { owner: 'Jeff', name: 'Roschon Johnson (Chi - RB)' },
-  { owner: 'Jeff', name: 'Raiders (LV - DEF)' },
   { owner: 'Jeff', name: 'Jacob Saylors (Det - RB)' },
-  { owner: 'Leeman', name: 'Kaleb Johnson (GB - RB)' },
-  { owner: 'Leeman', name: 'Tre Tucker (LV - WR)' },
-  { owner: 'Brad', name: 'Will Lutz' },
-  { owner: 'Dan', name: 'Jaxon Dart' },
-  { owner: 'Marc', name: 'LAC DEF' },
-  { owner: 'Marc', name: 'Kyle Pitts' },
+  { owner: 'Jeff', name: 'Raiders (LV - DEF)' },
+  { owner: 'Jeff', name: 'Chris Bell (Mia - WR)' },
+  { owner: 'Leeman', name: 'Raiders (LV - DEF)' },
+  { owner: 'Matt', name: 'Cyrus Allen (KC - WR)' },
 ];
 
 function normalize(s) {
-  return s.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  return s.replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
 }
 
 exports.handler = async function (event) {
@@ -40,13 +38,14 @@ exports.handler = async function (event) {
         results.push({ ...r, status: 'owner not found' });
         continue;
       }
-      const idx = roster.findIndex((p) => normalize(p.name) === normalize(r.name));
-      if (idx === -1) {
+      const before = roster.length;
+      data.rosters[r.owner] = roster.filter((p) => normalize(p.name) !== normalize(r.name));
+      const removedCount = before - data.rosters[r.owner].length;
+      if (removedCount === 0) {
         results.push({ ...r, status: 'not found on roster' });
-        continue;
+      } else {
+        results.push({ ...r, status: 'removed', count: removedCount });
       }
-      const removed = roster.splice(idx, 1)[0];
-      results.push({ ...r, status: 'removed', cost: removed.cost });
     }
 
     await store.setJSON('current', data);
