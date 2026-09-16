@@ -35,3 +35,8 @@
   from = "/api/fix"
   to = "/.netlify/functions/fix-known-issues"
   status = 200
+
+[[redirects]]
+  from = "/api/reset"
+  to = "/.netlify/functions/reset-baseline"
+  status = 200
