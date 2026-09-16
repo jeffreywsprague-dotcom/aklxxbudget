@@ -9,6 +9,7 @@ const REMOVALS = [
   { owner: 'Brad', name: 'Will Lutz' },
   { owner: 'Dan', name: 'Jaxon Dart' },
   { owner: 'Marc', name: 'LAC DEF' },
+  { owner: 'Marc', name: 'Kyle Pitts' },
 ];
 
 function normalize(s) {
