@@ -11,6 +11,10 @@ const REMOVALS = [
   { owner: 'Marc', name: 'LAC DEF' },
 ];
 
+function normalize(s) {
+  return s.replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
 exports.handler = async function (event) {
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -35,7 +39,7 @@ exports.handler = async function (event) {
         results.push({ ...r, status: 'owner not found' });
         continue;
       }
-      const idx = roster.findIndex((p) => p.name === r.name);
+      const idx = roster.findIndex((p) => normalize(p.name) === normalize(r.name));
       if (idx === -1) {
         results.push({ ...r, status: 'not found on roster' });
         continue;
