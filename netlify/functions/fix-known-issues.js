@@ -8,6 +8,7 @@ const REMOVALS = [
   { owner: 'Leeman', name: 'Tre Tucker (LV - WR)' },
   { owner: 'Brad', name: 'Will Lutz' },
   { owner: 'Dan', name: 'Jaxon Dart' },
+  { owner: 'Marc', name: 'LAC DEF' },
 ];
 
 exports.handler = async function (event) {
