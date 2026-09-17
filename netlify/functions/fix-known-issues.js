@@ -1,13 +1,8 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const REMOVALS = [
-  { owner: 'Jeff', name: 'Titans (Ten - DEF)' },
-  { owner: 'Jeff', name: 'Roschon Johnson (Chi - RB)' },
-  { owner: 'Jeff', name: 'Jacob Saylors (Det - RB)' },
-  { owner: 'Jeff', name: 'Raiders (LV - DEF)' },
-  { owner: 'Jeff', name: 'Chris Bell (Mia - WR)' },
-  { owner: 'Leeman', name: 'Raiders (LV - DEF)' },
-  { owner: 'Matt', name: 'Cyrus Allen (KC - WR)' },
+  { owner: 'Jeff', name: 'Pat Bryant (Den - WR)' },
+  { owner: 'Jeff', name: 'Ted Hurst III (TB - WR)' },
 ];
 
 function normalize(s) {
