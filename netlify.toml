@@ -45,3 +45,8 @@
   from = "/api/backfill-ids"
   to = "/.netlify/functions/backfill-ids"
   status = 200
+
+[[redirects]]
+  from = "/api/add-alias"
+  to = "/.netlify/functions/add-team-alias"
+  status = 200
