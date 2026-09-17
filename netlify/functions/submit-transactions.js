@@ -4,6 +4,17 @@ function baseName(n) {
   return n.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
 }
 
+// Finds a roster entry matching a move's player. Prefers matching by Yahoo ID
+// (stable even if a display name changes) and only falls back to a normalized
+// name match when no ID is available on one or both sides.
+function findPlayerIndex(roster, mv) {
+  if (mv.yid) {
+    const byId = roster.findIndex((p) => p.yid && p.yid === mv.yid);
+    if (byId !== -1) return byId;
+  }
+  return roster.findIndex((p) => baseName(p.name) === baseName(mv.player));
+}
+
 exports.handler = async function (event) {
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -62,7 +73,7 @@ exports.handler = async function (event) {
           continue;
         }
         const fullName = mv.pos ? `${mv.player} (${mv.pos})` : mv.player;
-        data.rosters[owner].push({ name: fullName, cost: mv.cost });
+        data.rosters[owner].push({ name: fullName, cost: mv.cost, yid: mv.yid || null });
         applied.push(mv);
         data.processedTx.push(mv.uid);
       } else if (mv.type === 'drop') {
@@ -71,7 +82,7 @@ exports.handler = async function (event) {
           unmappedTeam.push(mv);
           continue;
         }
-        const idx = data.rosters[owner].findIndex((p) => baseName(p.name) === baseName(mv.player));
+        const idx = findPlayerIndex(data.rosters[owner], mv);
         if (idx === -1) {
           notFound.push(mv);
         } else {
@@ -89,7 +100,7 @@ exports.handler = async function (event) {
         let fromOwner = null;
         let fromIdx = -1;
         for (const [owner, roster] of Object.entries(data.rosters)) {
-          const idx = roster.findIndex((p) => baseName(p.name) === baseName(mv.player));
+          const idx = findPlayerIndex(roster, mv);
           if (idx !== -1) {
             fromOwner = owner;
             fromIdx = idx;
@@ -99,7 +110,7 @@ exports.handler = async function (event) {
         }
         if (fromOwner) data.rosters[fromOwner].splice(fromIdx, 1);
         const fullName = mv.pos ? `${mv.player} (${mv.pos})` : mv.player;
-        data.rosters[toOwner].push({ name: fullName, cost: cost == null ? 3 : cost });
+        data.rosters[toOwner].push({ name: fullName, cost: cost == null ? 3 : cost, yid: mv.yid || null });
         if (cost == null) notFound.push(mv);
         applied.push(mv);
         data.processedTx.push(mv.uid);
