@@ -50,3 +50,8 @@
   from = "/api/add-alias"
   to = "/.netlify/functions/add-team-alias"
   status = 200
+
+[[redirects]]
+  from = "/api/add-player"
+  to = "/.netlify/functions/add-known-player"
+  status = 200
