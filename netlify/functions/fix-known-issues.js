@@ -1,7 +1,6 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const REMOVALS = [
-  { owner: 'Jeff', name: 'Pat Bryant (Den - WR)' },
   { owner: 'Jeff', name: 'Ted Hurst III (TB - WR)' },
 ];
 
