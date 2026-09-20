@@ -55,3 +55,8 @@
   from = "/api/add-player"
   to = "/.netlify/functions/add-known-player"
   status = 200
+
+[[redirects]]
+  from = "/api/adjust-price"
+  to = "/.netlify/functions/adjust-price"
+  status = 200
