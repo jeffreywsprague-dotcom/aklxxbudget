@@ -1,62 +1,51 @@
-[build]
-  functions = "netlify/functions"
+const { getLeagueStore } = require('./lib/blobStore');
 
-[[redirects]]
-  from = "/api/league"
-  to = "/.netlify/functions/get-league"
-  status = 200
+const REMOVALS = [
+  { owner: 'Dan', name: 'Denzel Boston (Cle - WR)' },
+];
 
-[[redirects]]
-  from = "/api/submit"
-  to = "/.netlify/functions/submit-transactions"
-  status = 200
+function normalize(s) {
+  return s.replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+}
 
-[[redirects]]
-  from = "/api/ping"
-  to = "/.netlify/functions/ping"
-  status = 200
+exports.handler = async function (event) {
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'application/json',
+  };
+  try {
+    const params = event.queryStringParameters || {};
+    if (!params.key || params.key !== process.env.BOOKMARKLET_KEY) {
+      return { statusCode: 401, headers, body: JSON.stringify({ error: 'Unauthorized' }) };
+    }
 
-[[redirects]]
-  from = "/api/blobtest"
-  to = "/.netlify/functions/blobtest"
-  status = 200
+    const store = getLeagueStore();
+    const data = await store.get('current', { type: 'json' });
+    if (!data) {
+      return { statusCode: 200, headers, body: JSON.stringify({ error: 'No league data found.' }) };
+    }
 
-[[redirects]]
-  from = "/api/cleanup"
-  to = "/.netlify/functions/cleanup-dupes"
-  status = 200
+    const results = [];
+    for (const r of REMOVALS) {
+      const roster = data.rosters[r.owner];
+      if (!roster) {
+        results.push({ ...r, status: 'owner not found' });
+        continue;
+      }
+      const before = roster.length;
+      data.rosters[r.owner] = roster.filter((p) => normalize(p.name) !== normalize(r.name));
+      const removedCount = before - data.rosters[r.owner].length;
+      if (removedCount === 0) {
+        results.push({ ...r, status: 'not found on roster' });
+      } else {
+        results.push({ ...r, status: 'removed', count: removedCount });
+      }
+    }
 
-[[redirects]]
-  from = "/api/audit"
-  to = "/.netlify/functions/audit"
-  status = 200
+    await store.setJSON('current', data);
 
-[[redirects]]
-  from = "/api/fix"
-  to = "/.netlify/functions/fix-known-issues"
-  status = 200
-
-[[redirects]]
-  from = "/api/reset"
-  to = "/.netlify/functions/reset-baseline"
-  status = 200
-
-[[redirects]]
-  from = "/api/backfill-ids"
-  to = "/.netlify/functions/backfill-ids"
-  status = 200
-
-[[redirects]]
-  from = "/api/add-alias"
-  to = "/.netlify/functions/add-team-alias"
-  status = 200
-
-[[redirects]]
-  from = "/api/add-player"
-  to = "/.netlify/functions/add-known-player"
-  status = 200
-
-[[redirects]]
-  from = "/api/adjust-price"
-  to = "/.netlify/functions/adjust-price"
-  status = 200
+    return { statusCode: 200, headers, body: JSON.stringify({ ok: true, results }, null, 2) };
+  } catch (err) {
+    return { statusCode: 200, headers, body: JSON.stringify({ ok: false, message: err.message, stack: err.stack }) };
+  }
+};
