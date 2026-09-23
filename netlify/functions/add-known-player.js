@@ -1,7 +1,7 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const ADDITIONS = [
-  { owner: 'Dan', name: 'Brian Robinson (Atl - RB)', cost: 2 },
+  { owner: 'Ryan', name: 'Patriots (NE - DEF)', cost: 1 },
 ];
 
 exports.handler = async function (event) {
