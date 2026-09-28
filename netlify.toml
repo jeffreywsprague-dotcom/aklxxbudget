@@ -60,3 +60,8 @@
   from = "/api/adjust-price"
   to = "/.netlify/functions/adjust-price"
   status = 200
+
+[[redirects]]
+  from = "/api/set-team-ids"
+  to = "/.netlify/functions/set-team-id-map"
+  status = 200
