@@ -15,6 +15,16 @@ function findPlayerIndex(roster, mv) {
   return roster.findIndex((p) => baseName(p.name) === baseName(mv.player));
 }
 
+// Resolves which owner a transaction belongs to. Prefers the permanent Yahoo
+// team ID (stable even through a team-name rename) and only falls back to the
+// display-name teamMap when no ID is available.
+function resolveOwner(data, teamId, teamName) {
+  if (teamId && data.teamIdMap && data.teamIdMap[teamId]) {
+    return data.teamIdMap[teamId];
+  }
+  return data.teamMap[teamName];
+}
+
 exports.handler = async function (event) {
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -67,7 +77,7 @@ exports.handler = async function (event) {
       }
 
       if (mv.type === 'add') {
-        const owner = data.teamMap[mv.team];
+        const owner = resolveOwner(data, mv.teamId, mv.team);
         if (!owner) {
           unmappedTeam.push(mv);
           continue;
@@ -77,7 +87,7 @@ exports.handler = async function (event) {
         applied.push(mv);
         data.processedTx.push(mv.uid);
       } else if (mv.type === 'drop') {
-        const owner = data.teamMap[mv.team];
+        const owner = resolveOwner(data, mv.teamId, mv.team);
         if (!owner) {
           unmappedTeam.push(mv);
           continue;
@@ -91,7 +101,7 @@ exports.handler = async function (event) {
         }
         data.processedTx.push(mv.uid);
       } else if (mv.type === 'trade_leg') {
-        const toOwner = data.teamMap[mv.toTeam];
+        const toOwner = resolveOwner(data, mv.toTeamId, mv.toTeam);
         if (!toOwner) {
           unmappedTeam.push(mv);
           continue;
