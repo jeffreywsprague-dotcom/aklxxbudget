@@ -1,7 +1,7 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 function baseName(n) {
-  return n.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase();
+  return n.replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
 }
 
 // Finds a roster entry matching a move's player. Prefers matching by Yahoo ID
