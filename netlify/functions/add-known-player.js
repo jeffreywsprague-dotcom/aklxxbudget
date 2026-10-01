@@ -1,12 +1,8 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const ADDITIONS = [
-  { owner: 'Tony', name: 'Ravens (Bal - DEF)', cost: 1 },
-  { owner: 'Dan', name: 'Eagles (Phi - DEF)', cost: 1 },
-  { owner: 'Randy', name: 'Texans (Hou - DEF)', cost: 3 },
-  { owner: 'Leeman', name: 'Giants (NYG - DEF)', cost: 1 },
-  { owner: 'Matt', name: 'Steelers (Pit - DEF)', cost: 1 },
-  { owner: 'CMAC', name: 'Broncos (Den - DEF)', cost: 2 },
+  { owner: 'Jeff', name: 'Chase Brown (Cin - RB)', cost: 16 },
+  { owner: 'Jeff', name: 'Zay Flowers (Bal - WR)', cost: 48 },
 ];
 
 exports.handler = async function (event) {
