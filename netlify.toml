@@ -75,3 +75,8 @@
   from = "/api/audit-roster"
   to = "/.netlify/functions/audit-roster"
   status = 200
+
+[[redirects]]
+  from = "/api/audit-roster-batch"
+  to = "/.netlify/functions/audit-roster-batch"
+  status = 200
