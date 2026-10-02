@@ -65,3 +65,13 @@
   from = "/api/set-team-ids"
   to = "/.netlify/functions/set-team-id-map"
   status = 200
+
+[[redirects]]
+  from = "/audit"
+  to = "/.netlify/functions/audit-view"
+  status = 200
+
+[[redirects]]
+  from = "/api/audit-roster"
+  to = "/.netlify/functions/audit-roster"
+  status = 200
