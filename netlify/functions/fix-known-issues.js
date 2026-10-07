@@ -1,7 +1,7 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
 const REMOVALS = [
-  { owner: 'Marc', name: 'Pat Bryant' },
+  { owner: 'Marc', name: 'Nick Folk' },
 ];
 
 function normalize(s) {
