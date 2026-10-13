@@ -8,7 +8,7 @@ const REMOVALS = [
   { owner: 'Marc', name: 'Nick Folk' },
   { owner: 'Marc', name: 'Colts', match: 'contains' },
   { owner: 'Marc', name: 'Higbee', match: 'contains' },
-  { owner: 'Jeff', name: 'Khalif Raymond', match: 'contains' },
+  { owner: 'Jeff', name: 'Kalif Raymond', match: 'contains' },
 ];
 
 function normalize(s) {
