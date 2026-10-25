@@ -69,7 +69,11 @@ exports.handler = async function (event) {
     const notFound = [];
     const unmappedTeam = [];
 
-    for (const mv of moves) {
+    // Yahoo lists transactions newest-first and the scrapers send them in page order.
+    // Replay oldest-first, so a drop is always applied after the add it undoes.
+    const chronological = [...moves].reverse();
+
+    for (const mv of chronological) {
       if (!mv || !mv.uid || !mv.type) continue;
       if (!dryRun && data.processedTx.includes(mv.uid)) {
         skippedDup.push(mv);
@@ -83,7 +87,24 @@ exports.handler = async function (event) {
           continue;
         }
         const fullName = mv.pos ? `${mv.player} (${mv.pos})` : mv.player;
-        data.rosters[owner].push({ name: fullName, cost: mv.cost, yid: mv.yid || null });
+        // A player can only be on one roster, once. If he's already on this one
+        // (a missed drop, a manual add, a replayed event), update that entry
+        // instead of creating a duplicate.
+        const existingIdx = findPlayerIndex(data.rosters[owner], mv);
+        if (existingIdx !== -1) {
+          const existing = data.rosters[owner][existingIdx];
+          data.rosters[owner][existingIdx] = { name: fullName, cost: mv.cost, yid: mv.yid || existing.yid || null };
+        } else {
+          data.rosters[owner].push({ name: fullName, cost: mv.cost, yid: mv.yid || null });
+        }
+        // If another team still shows him, that team's drop was never captured.
+        // Only matched by permanent Yahoo ID, so similar names can't collide.
+        if (mv.yid) {
+          for (const otherOwner of Object.keys(data.rosters)) {
+            if (otherOwner === owner) continue;
+            data.rosters[otherOwner] = data.rosters[otherOwner].filter((p) => p.yid !== mv.yid);
+          }
+        }
         applied.push(mv);
         data.processedTx.push(mv.uid);
       } else if (mv.type === 'drop') {
@@ -92,11 +113,15 @@ exports.handler = async function (event) {
           unmappedTeam.push(mv);
           continue;
         }
-        const idx = findPlayerIndex(data.rosters[owner], mv);
+        let idx = findPlayerIndex(data.rosters[owner], mv);
         if (idx === -1) {
           notFound.push(mv);
         } else {
-          data.rosters[owner].splice(idx, 1);
+          // remove every copy, in case an earlier glitch left more than one
+          while (idx !== -1) {
+            data.rosters[owner].splice(idx, 1);
+            idx = findPlayerIndex(data.rosters[owner], mv);
+          }
           applied.push(mv);
         }
         data.processedTx.push(mv.uid);
