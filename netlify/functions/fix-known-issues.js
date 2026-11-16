@@ -4,15 +4,15 @@ const { getLeagueStore } = require('./lib/blobStore');
 // includes the text (useful when the full stored name isn't known). Default is an
 // exact match on the cleaned-up name. Repeating an already-applied removal is harmless.
 const REMOVALS = [
-  { owner: 'Marc', name: 'Pat Bryant' },
-  { owner: 'Marc', name: 'Nick Folk' },
-  { owner: 'Marc', name: 'Colts', match: 'contains' },
-  { owner: 'Marc', name: 'Higbee', match: 'contains' },
-  { owner: 'Jeff', name: 'Kalif Raymond', match: 'contains' },
-  { owner: 'Jeff', name: 'Okonkwo', match: 'contains' },
-  { owner: 'Jeff', name: 'Darnell Washington', match: 'contains' },
-  { owner: 'Matt', name: 'Jordan Addison' },
-  { owner: 'Matt', name: 'Steelers' },
+  { owner: 'Jeff', name: 'Jordan Watkins' },
+  { owner: 'Marc', name: 'Darius Cooper' },
+  { owner: 'Marc', name: 'Geno Smith' },
+  { owner: 'Marc', name: 'Kaleb Johnson' },
+  { owner: 'Marc', name: 'Adonai Mitchell' },
+  { owner: 'Marc', name: 'Chimere Dike' },
+  { owner: 'Marc', name: 'Tutu Atwell' },
+  { owner: 'Randy', name: 'Kayshon Boutte' },
+  { owner: 'Ryan', name: 'Michael Wilson' },
 ];
 
 function normalize(s) {
