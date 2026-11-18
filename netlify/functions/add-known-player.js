@@ -1,7 +1,10 @@
 const { getLeagueStore } = require('./lib/blobStore');
 
+function normalize(s) {
+  return s.replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+}
+
 const ADDITIONS = [
-  { owner: 'Marc', name: 'Justice Hill', cost: 3 },
 ];
 
 exports.handler = async function (event) {
@@ -27,7 +30,7 @@ exports.handler = async function (event) {
         results.push({ ...a, status: 'owner not found' });
         continue;
       }
-      const already = data.rosters[a.owner].some((p) => p.name === a.name);
+      const already = data.rosters[a.owner].some((p) => normalize(p.name) === normalize(a.name));
       if (already) {
         results.push({ ...a, status: 'already present, skipped' });
         continue;
