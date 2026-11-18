@@ -4,15 +4,7 @@ const { getLeagueStore } = require('./lib/blobStore');
 // includes the text (useful when the full stored name isn't known). Default is an
 // exact match on the cleaned-up name. Repeating an already-applied removal is harmless.
 const REMOVALS = [
-  { owner: 'Jeff', name: 'Jordan Watkins' },
-  { owner: 'Marc', name: 'Darius Cooper' },
-  { owner: 'Marc', name: 'Geno Smith' },
-  { owner: 'Marc', name: 'Kaleb Johnson' },
-  { owner: 'Marc', name: 'Adonai Mitchell' },
-  { owner: 'Marc', name: 'Chimere Dike' },
-  { owner: 'Marc', name: 'Tutu Atwell' },
-  { owner: 'Randy', name: 'Kayshon Boutte' },
-  { owner: 'Ryan', name: 'Michael Wilson' },
+  { owner: 'Marc', name: 'Justice Hill', match: 'dedupe' },
 ];
 
 function normalize(s) {
@@ -44,6 +36,20 @@ exports.handler = async function (event) {
         continue;
       }
       const target = normalize(r.name);
+      if (r.match === 'dedupe') {
+        // Keep ONE copy (preferring the one with a Yahoo ID and a team tag, which is
+        // the scraped entry with the real price) and remove only the extras.
+        const copies = roster.filter((p) => normalize(p.name) === target);
+        if (copies.length <= 1) {
+          results.push({ ...r, status: 'no duplicates found', count: copies.length });
+          continue;
+        }
+        const score = (p) => (p.yid ? 2 : 0) + (/\(.*\)/.test(p.name) ? 1 : 0);
+        const keep = copies.reduce((best, p) => (score(p) > score(best) ? p : best), copies[0]);
+        data.rosters[r.owner] = roster.filter((p) => normalize(p.name) !== target || p === keep);
+        results.push({ ...r, status: 'deduped', removed: copies.length - 1, kept: keep.name + ' $' + keep.cost });
+        continue;
+      }
       const isMatch = (p) =>
         r.match === 'contains' ? normalize(p.name).includes(target) : normalize(p.name) === target;
       const removed = roster.filter(isMatch);
